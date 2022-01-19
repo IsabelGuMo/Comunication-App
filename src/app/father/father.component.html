@@ -1,0 +1,7 @@
+<div>
+    <h1>Father Component</h1>
+    <input #fatherInput (keyup)="keyUp(fatherInput.value)" />
+    <div>
+        <app-son [inputText]="inputText"></app-son>app-son
+    </div>
+</div>    
