@@ -3,3 +3,8 @@
     <p>El hijo ahora escucha:</p>
     <p>{{ inputText }}</p>
 </div>
+<div>
+    <h1>Envia un mensaje al componente padre</h1>
+    <input [(ngModel)]='message'/>
+    <button (click)='sendMessage()'>Enviar al padre </button>
+</div>

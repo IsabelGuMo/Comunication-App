@@ -2,6 +2,11 @@
     <h1>Father Component</h1>
     <input #fatherInput (keyup)="keyUp(fatherInput.value)" />
     <div>
-        <app-son [inputText]="inputText"></app-son>app-son
+        <app-son 
+            [inputText]="inputText"
+            (emitMessage)="setMessage ($event)"
+        ></app-son>
+        <h1>Mensaje de mi hijo</h1>
+        <p>{{ sonMessage }}</p>
     </div>
 </div>    

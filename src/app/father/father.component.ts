@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-father',
@@ -7,15 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FatherComponent {
   public inputText: string = '';
+  public sonMessage: string = '';
   
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public keyUp(letra: string): void {
     this.inputText = letra;
+  }
+  public setMessage(message: string): void {
+    this.sonMessage = message;
   }
 
 }
